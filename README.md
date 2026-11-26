@@ -134,11 +134,7 @@ When I have free time at night, I write dev notes at **[toanlb.dev](https://toan
 <br/>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/toan-lb/toan-lb/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/toan-lb/toan-lb/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/toan-lb/toan-lb/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
+  <img src="./assets/voxel-arcade.svg" alt="Voxel Sandbox Mini-Game Animation" width="100%" />
 </div>
 
 <div align="center">
