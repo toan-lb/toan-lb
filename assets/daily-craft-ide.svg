@@ -20,6 +20,7 @@
     <rect width="1200" height="520" fill="#0B1120"/>
     <rect width="1200" height="520" fill="url(#ideDots)"/>
 
+    <!-- Window Bar -->
     <rect width="1200" height="52" fill="#111A30"/>
     <line x1="0" y1="52" x2="1200" y2="52" stroke="#1E293B" stroke-width="1.5"/>
     <circle cx="30" cy="26" r="6.5" fill="#F43F5E"/>
@@ -27,6 +28,7 @@
     <circle cx="74" cy="26" r="6.5" fill="#22C55E"/>
     <text x="112" y="31" class="m" font-size="13" font-weight="700" fill="#94A3B8">DAILY WORKBENCH  •  15s LIVE LOOP</text>
 
+    <!-- 3 Animated Tabs -->
     <g>
       <rect x="440" y="10" width="180" height="32" rx="8" fill="#1E293B"/>
       <rect x="440" y="10" width="180" height="32" rx="8" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8" stroke-width="1.5">
@@ -49,6 +51,7 @@
       <text x="930" y="31" text-anchor="middle" class="m" font-size="13" font-weight="700" fill="#F1F5F9">toanlb.dev.md</text>
     </g>
 
+    <!-- Left Editor Pane -->
     <rect x="28" y="76" width="580" height="416" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
     <text x="42" y="114" class="m" font-size="12" font-weight="700" letter-spacing="0.1em" fill="#64748B">EDITOR // TYPING LIVE</text>
     <line x1="28" y1="130" x2="608" y2="130" stroke="#1E293B" stroke-width="1"/>
@@ -209,54 +212,100 @@
       <text x="60" y="456" class="m" font-size="13.5" fill="#A78BFA">&gt; Astro Static Build: Synced to toanlb.dev</text>
     </g>
 
+    <!-- Right Preview Pane -->
     <rect x="632" y="76" width="540" height="416" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
     <text x="654" y="114" class="m" font-size="12" font-weight="700" letter-spacing="0.1em" fill="#64748B">RUNTIME PREVIEW</text>
     <line x1="632" y1="130" x2="1172" y2="130" stroke="#1E293B" stroke-width="1"/>
 
+    <!-- High-End Preview 1: Ring-Buffer Matrix + Live Frame-Time Profiler -->
     <g><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.3183;0.3333;1" dur="15s" repeatCount="indefinite"/>
-      <text x="902" y="172" text-anchor="middle" class="t" font-size="19" font-weight="700" fill="#F8FAFC">Zero-Allocation Object Pool</text>
-      <rect x="676" y="196" width="452" height="205" rx="12" fill="#090E1A" stroke="#1E293B"/>
-      <circle cx="742" cy="256" r="18" fill="#2DD4BF" fill-opacity="0.25" stroke="#2DD4BF" stroke-width="2">
-        <animate attributeName="cx" values="742;1062;742" dur="3.2s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="1062" cy="306" r="14" fill="#38BDF8" fill-opacity="0.25" stroke="#38BDF8" stroke-width="2">
-        <animate attributeName="cx" values="1062;742;1062" dur="2.6s" repeatCount="indefinite"/>
-      </circle>
-      <rect x="874" y="340" width="56" height="30" rx="8" fill="#FBBF24" fill-opacity="0.22" stroke="#FBBF24" stroke-width="2">
-        <animate attributeName="x" values="720;1028;720" dur="3.8s" repeatCount="indefinite"/>
-      </rect>
-      <text x="902" y="442" text-anchor="middle" class="m" font-size="14" font-weight="700" fill="#34D399">POOL HIT RATE: 100%  •  ZERO INSTANTIATE SPIKES</text>
+      <text x="664" y="164" class="t" font-size="17" font-weight="700" fill="#F8FAFC">Zero-Allocation Pool &amp; Profiler</text>
+      <rect x="974" y="146" width="166" height="24" rx="12" fill="#052E16" stroke="#22C55E" stroke-opacity="0.6"/>
+      <text x="1057" y="162" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#4ADE80">GC ALLOC: 0 BYTES</text>
+
+      <!-- Pool Ring-Buffer Slots -->
+      <rect x="664" y="182" width="476" height="128" rx="10" fill="#090E1A" stroke="#1E293B"/>
+      <rect x="682" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="682" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.00s" repeatCount="indefinite"/></rect><text x="705" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">00</text><rect x="738" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="738" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.19s" repeatCount="indefinite"/></rect><text x="761" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">01</text><rect x="794" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="794" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.38s" repeatCount="indefinite"/></rect><text x="817" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">02</text><rect x="850" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="850" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.57s" repeatCount="indefinite"/></rect><text x="873" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">03</text><rect x="906" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="906" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.76s" repeatCount="indefinite"/></rect><text x="929" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">04</text><rect x="962" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="962" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-0.95s" repeatCount="indefinite"/></rect><text x="985" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">05</text><rect x="1018" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1018" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-1.14s" repeatCount="indefinite"/></rect><text x="1041" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">06</text><rect x="1074" y="200" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1074" y="200" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-1.33s" repeatCount="indefinite"/></rect><text x="1097" y="216" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">07</text><rect x="682" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="682" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-1.52s" repeatCount="indefinite"/></rect><text x="705" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">08</text><rect x="738" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="738" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-1.71s" repeatCount="indefinite"/></rect><text x="761" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">09</text><rect x="794" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="794" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-1.90s" repeatCount="indefinite"/></rect><text x="817" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">10</text><rect x="850" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="850" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-2.09s" repeatCount="indefinite"/></rect><text x="873" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">11</text><rect x="906" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="906" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-2.28s" repeatCount="indefinite"/></rect><text x="929" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">12</text><rect x="962" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="962" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-2.47s" repeatCount="indefinite"/></rect><text x="985" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">13</text><rect x="1018" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1018" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-2.66s" repeatCount="indefinite"/></rect><text x="1041" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">14</text><rect x="1074" y="234" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1074" y="234" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-2.85s" repeatCount="indefinite"/></rect><text x="1097" y="250" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">15</text><rect x="682" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="682" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.04s" repeatCount="indefinite"/></rect><text x="705" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">16</text><rect x="738" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="738" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.23s" repeatCount="indefinite"/></rect><text x="761" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">17</text><rect x="794" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="794" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.42s" repeatCount="indefinite"/></rect><text x="817" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">18</text><rect x="850" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="850" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.61s" repeatCount="indefinite"/></rect><text x="873" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">19</text><rect x="906" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="906" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.80s" repeatCount="indefinite"/></rect><text x="929" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">20</text><rect x="962" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="962" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-3.99s" repeatCount="indefinite"/></rect><text x="985" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">21</text><rect x="1018" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1018" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-4.18s" repeatCount="indefinite"/></rect><text x="1041" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">22</text><rect x="1074" y="268" width="46" height="24" rx="5" fill="#132238" stroke="#1E3A5F" stroke-width="1"/><rect x="1074" y="268" width="46" height="24" rx="5" fill="#2DD4BF" fill-opacity="0.28" stroke="#2DD4BF" stroke-width="1.3" opacity="0.15"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.8s" begin="-4.37s" repeatCount="indefinite"/></rect><text x="1097" y="284" text-anchor="middle" class="m" font-size="10" fill="#94A3B8">23</text>
+
+      <!-- Profiler Chart -->
+      <rect x="664" y="322" width="476" height="114" rx="10" fill="#090E1A" stroke="#1E293B"/>
+      <text x="682" y="344" class="m" font-size="10.5" font-weight="700" fill="#64748B">FRAME TIME (60 FPS TARGET)</text>
+      <text x="1122" y="344" text-anchor="end" class="m" font-size="10.5" font-weight="700" fill="#2DD4BF">16.6ms BUDGET</text>
+      <line x1="680" y1="358" x2="1124" y2="358" stroke="#22C55E" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 5"/>
+      <rect x="684" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;30;22" dur="1.6s" begin="-0.00s" repeatCount="indefinite"/><animate attributeName="y" values="392;384;392" dur="1.6s" begin="-0.00s" repeatCount="indefinite"/></rect><rect x="704" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;41;29" dur="1.6s" begin="-0.13s" repeatCount="indefinite"/><animate attributeName="y" values="385;373;385" dur="1.6s" begin="-0.13s" repeatCount="indefinite"/></rect><rect x="724" y="392" width="12" height="22" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="22;36;22" dur="1.6s" begin="-0.26s" repeatCount="indefinite"/><animate attributeName="y" values="392;378;392" dur="1.6s" begin="-0.26s" repeatCount="indefinite"/></rect><rect x="744" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;31;29" dur="1.6s" begin="-0.39s" repeatCount="indefinite"/><animate attributeName="y" values="385;383;385" dur="1.6s" begin="-0.39s" repeatCount="indefinite"/></rect><rect x="764" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;42;22" dur="1.6s" begin="-0.52s" repeatCount="indefinite"/><animate attributeName="y" values="392;372;392" dur="1.6s" begin="-0.52s" repeatCount="indefinite"/></rect><rect x="784" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;37;29" dur="1.6s" begin="-0.65s" repeatCount="indefinite"/><animate attributeName="y" values="385;377;385" dur="1.6s" begin="-0.65s" repeatCount="indefinite"/></rect><rect x="804" y="392" width="12" height="22" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="22;32;22" dur="1.6s" begin="-0.78s" repeatCount="indefinite"/><animate attributeName="y" values="392;382;392" dur="1.6s" begin="-0.78s" repeatCount="indefinite"/></rect><rect x="824" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;43;29" dur="1.6s" begin="-0.91s" repeatCount="indefinite"/><animate attributeName="y" values="385;371;385" dur="1.6s" begin="-0.91s" repeatCount="indefinite"/></rect><rect x="844" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;38;22" dur="1.6s" begin="-1.04s" repeatCount="indefinite"/><animate attributeName="y" values="392;376;392" dur="1.6s" begin="-1.04s" repeatCount="indefinite"/></rect><rect x="864" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;33;29" dur="1.6s" begin="-1.17s" repeatCount="indefinite"/><animate attributeName="y" values="385;381;385" dur="1.6s" begin="-1.17s" repeatCount="indefinite"/></rect><rect x="884" y="392" width="12" height="22" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="22;44;22" dur="1.6s" begin="-1.30s" repeatCount="indefinite"/><animate attributeName="y" values="392;370;392" dur="1.6s" begin="-1.30s" repeatCount="indefinite"/></rect><rect x="904" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;39;29" dur="1.6s" begin="-1.43s" repeatCount="indefinite"/><animate attributeName="y" values="385;375;385" dur="1.6s" begin="-1.43s" repeatCount="indefinite"/></rect><rect x="924" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;34;22" dur="1.6s" begin="-1.56s" repeatCount="indefinite"/><animate attributeName="y" values="392;380;392" dur="1.6s" begin="-1.56s" repeatCount="indefinite"/></rect><rect x="944" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;45;29" dur="1.6s" begin="-1.69s" repeatCount="indefinite"/><animate attributeName="y" values="385;369;385" dur="1.6s" begin="-1.69s" repeatCount="indefinite"/></rect><rect x="964" y="392" width="12" height="22" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="22;40;22" dur="1.6s" begin="-1.82s" repeatCount="indefinite"/><animate attributeName="y" values="392;374;392" dur="1.6s" begin="-1.82s" repeatCount="indefinite"/></rect><rect x="984" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;35;29" dur="1.6s" begin="-1.95s" repeatCount="indefinite"/><animate attributeName="y" values="385;379;385" dur="1.6s" begin="-1.95s" repeatCount="indefinite"/></rect><rect x="1004" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;30;22" dur="1.6s" begin="-2.08s" repeatCount="indefinite"/><animate attributeName="y" values="392;384;392" dur="1.6s" begin="-2.08s" repeatCount="indefinite"/></rect><rect x="1024" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;41;29" dur="1.6s" begin="-2.21s" repeatCount="indefinite"/><animate attributeName="y" values="385;373;385" dur="1.6s" begin="-2.21s" repeatCount="indefinite"/></rect><rect x="1044" y="392" width="12" height="22" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="22;36;22" dur="1.6s" begin="-2.34s" repeatCount="indefinite"/><animate attributeName="y" values="392;378;392" dur="1.6s" begin="-2.34s" repeatCount="indefinite"/></rect><rect x="1064" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;31;29" dur="1.6s" begin="-2.47s" repeatCount="indefinite"/><animate attributeName="y" values="385;383;385" dur="1.6s" begin="-2.47s" repeatCount="indefinite"/></rect><rect x="1084" y="392" width="12" height="22" rx="2.5" fill="#2DD4BF" opacity="0.85"><animate attributeName="height" values="22;42;22" dur="1.6s" begin="-2.60s" repeatCount="indefinite"/><animate attributeName="y" values="392;372;392" dur="1.6s" begin="-2.60s" repeatCount="indefinite"/></rect><rect x="1104" y="385" width="12" height="29" rx="2.5" fill="#38BDF8" opacity="0.85"><animate attributeName="height" values="29;37;29" dur="1.6s" begin="-2.73s" repeatCount="indefinite"/><animate attributeName="y" values="385;377;385" dur="1.6s" begin="-2.73s" repeatCount="indefinite"/></rect>
+      <line x1="680" y1="418" x2="1124" y2="418" stroke="#22C55E" stroke-width="1.8"/>
+
+      <text x="664" y="464" class="m" font-size="12" font-weight="700" fill="#38BDF8">PRE-WARMED: 24 SLOTS</text>
+      <text x="1140" y="464" text-anchor="end" class="m" font-size="12" font-weight="700" fill="#34D399">NO GC SPIKES</text>
     </g>
 
+    <!-- High-End Preview 2: Luxury Automotive Digital Cockpit HUD -->
     <g><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3483;0.6517;0.6667;1" dur="15s" repeatCount="indefinite"/>
-      <text x="902" y="172" text-anchor="middle" class="t" font-size="19" font-weight="700" fill="#F8FAFC">Digital Cluster Speedometer</text>
-      <circle cx="902" cy="308" r="108" fill="#090E1A" stroke="#1E293B" stroke-width="2.5"/>
-      <path d="M 812 362 A 104 104 0 1 1 992 362" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round"/>
-      <path d="M 812 362 A 104 104 0 0 1 954 218" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
-      <path d="M 958 221 A 104 104 0 0 1 992 362" fill="none" stroke="#FBBF24" stroke-width="10" stroke-linecap="round"/>
+      <text x="664" y="164" class="t" font-size="17" font-weight="700" fill="#F8FAFC">Digital Cockpit Cluster</text>
+      <rect x="988" y="146" width="152" height="24" rx="12" fill="#172554" stroke="#38BDF8" stroke-opacity="0.6"/>
+      <text x="1064" y="162" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#38BDF8">AAOS / QNX 60HZ</text>
+
+      <rect x="664" y="182" width="476" height="254" rx="12" fill="#070B14" stroke="#1E293B"/>
+      <!-- Lane-assist perspective rails -->
+      <line x1="704" y1="410" x2="764" y2="230" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="10 8"/>
+      <line x1="1100" y1="410" x2="1040" y2="230" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="10 8"/>
+
+      <!-- Left & Right Status Cards inside Cluster -->
+      <rect x="684" y="204" width="84" height="52" rx="8" fill="#0F172A" stroke="#1E293B"/>
+      <text x="726" y="224" text-anchor="middle" class="m" font-size="10" fill="#64748B">GEAR</text>
+      <text x="726" y="246" text-anchor="middle" class="m" font-size="18" font-weight="800" fill="#34D399">D</text>
+
+      <rect x="1036" y="204" width="84" height="52" rx="8" fill="#0F172A" stroke="#1E293B"/>
+      <text x="1078" y="224" text-anchor="middle" class="m" font-size="10" fill="#64748B">BATT</text>
+      <text x="1078" y="246" text-anchor="middle" class="m" font-size="16" font-weight="800" fill="#FBBF24">88%</text>
+
+      <!-- Main Dial -->
+      <circle cx="902" cy="304" r="114" fill="#0B1120" stroke="#1E293B" stroke-width="2"/>
+      <line x1="826.6" y1="356.8" x2="816.8" y2="363.7" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="811.4" y1="320.0" x2="799.6" y2="322.1" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="813.1" y1="280.2" x2="801.5" y2="277.1" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="831.5" y1="244.9" x2="822.3" y2="237.2" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="863.1" y1="220.6" x2="858.0" y2="209.7" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="902.0" y1="212.0" x2="902.0" y2="200.0" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="940.9" y1="220.6" x2="946.0" y2="209.7" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/><line x1="972.5" y1="244.9" x2="981.7" y2="237.2" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/><line x1="990.9" y1="280.2" x2="1002.5" y2="277.1" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/><line x1="992.6" y1="320.0" x2="1004.4" y2="322.1" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/><line x1="977.4" y1="356.8" x2="987.2" y2="363.7" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 818 358 A 100 100 0 1 1 986 358" fill="none" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 818 358 A 100 100 0 0 1 952 218" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 956 221 A 100 100 0 0 1 986 358" fill="none" stroke="#FBBF24" stroke-width="8" stroke-linecap="round"/>
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-115 902 308; 18 902 308; -10 902 308; 45 902 308; -115 902 308" dur="4.8s" repeatCount="indefinite"/>
-        <polygon points="899,308 905,308 902,216" fill="#F43F5E"/>
-        <circle cx="902" cy="308" r="9" fill="#F8FAFC"/>
+        <animateTransform attributeName="transform" type="rotate" values="-115 902 304; 22 902 304; -12 902 304; 45 902 304; -115 902 304" dur="4.8s" repeatCount="indefinite"/>
+        <polygon points="899,304 905,304 902,212" fill="#F43F5E"/>
+        <circle cx="902" cy="304" r="8" fill="#F8FAFC"/>
       </g>
-      <text x="902" y="365" text-anchor="middle" class="m" font-size="18" font-weight="800" fill="#F8FAFC">88 km/h</text>
-      <text x="902" y="450" text-anchor="middle" class="m" font-size="13.5" font-weight="700" fill="#FBBF24">AAOS / QNX  •  60 HZ CLUSTER</text>
+      <text x="902" y="362" text-anchor="middle" class="m" font-size="20" font-weight="800" fill="#F8FAFC">88 km/h</text>
+      <text x="902" y="384" text-anchor="middle" class="m" font-size="10.5" fill="#94A3B8">CAN BUS LOCKED</text>
+
+      <text x="664" y="464" class="m" font-size="12" font-weight="700" fill="#FBBF24">UNITY &amp; UNREAL HMI</text>
+      <text x="1140" y="464" text-anchor="end" class="m" font-size="12" font-weight="700" fill="#38BDF8">SMOOTH DIALS</text>
     </g>
 
+    <!-- High-End Preview 3: Connected Roslyn + NUnit + Astro Pipeline -->
     <g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6667;0.6817;0.985;1" dur="15s" repeatCount="indefinite"/>
-      <text x="902" y="172" text-anchor="middle" class="t" font-size="19" font-weight="700" fill="#F8FAFC">Verified Blog Publishing Pipeline</text>
-      <rect x="688" y="206" width="428" height="58" rx="12" fill="#090E1A" stroke="#38BDF8" stroke-width="1.6"/>
-      <circle cx="718" cy="235" r="7" fill="#38BDF8"/>
-      <text x="738" y="241" class="t" font-size="16" font-weight="700" fill="#F1F5F9">1. Roslyn Compile vs UnityEngine.dll</text>
+      <text x="664" y="164" class="t" font-size="17" font-weight="700" fill="#F8FAFC">Verified Blog Pipeline</text>
+      <rect x="988" y="146" width="152" height="24" rx="12" fill="#052E16" stroke="#34D399" stroke-opacity="0.6"/>
+      <text x="1064" y="162" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="#34D399">100% VERIFIED</text>
 
-      <rect x="688" y="284" width="428" height="58" rx="12" fill="#090E1A" stroke="#34D399" stroke-width="1.6"/>
-      <circle cx="718" cy="313" r="7" fill="#34D399"/>
-      <text x="738" y="319" class="t" font-size="16" font-weight="700" fill="#F1F5F9">2. NUnit Test Runner (100% Pass)</text>
+      <!-- Connecting vertical trace + traveling pulse -->
+      <line x1="714" y1="226" x2="714" y2="396" stroke="#1E293B" stroke-width="3"/>
+      <circle cx="714" cy="226" r="5" fill="#34D399">
+        <animate attributeName="cy" values="226;396;226" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
 
-      <rect x="688" y="362" width="428" height="58" rx="12" fill="#090E1A" stroke="#A78BFA" stroke-width="1.6"/>
-      <circle cx="718" cy="391" r="7" fill="#A78BFA"/>
-      <text x="738" y="397" class="t" font-size="16" font-weight="700" fill="#F1F5F9">3. Bilingual Astro Deploy (VI / EN)</text>
-      <text x="902" y="454" text-anchor="middle" class="m" font-size="13.5" font-weight="700" fill="#34D399">ZERO UNTESTED CODE ON TOANLB.DEV</text>
+      <rect x="682" y="196" width="458" height="62" rx="12" fill="#090E1A" stroke="#38BDF8" stroke-width="1.5"/>
+      <circle cx="714" cy="227" r="7" fill="#38BDF8"/>
+      <text x="736" y="223" class="t" font-size="15.5" font-weight="700" fill="#F1F5F9">1. Roslyn Compile vs UnityEngine.dll</text>
+      <text x="736" y="244" class="m" font-size="11.5" fill="#38BDF8">C# 9.0 snippets compiled • 0 errors</text>
+
+      <rect x="682" y="280" width="458" height="62" rx="12" fill="#090E1A" stroke="#34D399" stroke-width="1.5"/>
+      <circle cx="714" cy="311" r="7" fill="#34D399"/>
+      <text x="736" y="307" class="t" font-size="15.5" font-weight="700" fill="#F1F5F9">2. NUnit Test Runner</text>
+      <text x="736" y="328" class="m" font-size="11.5" fill="#34D399">Happy path &amp; edge cases • Passed!</text>
+
+      <rect x="682" y="364" width="458" height="62" rx="12" fill="#090E1A" stroke="#A78BFA" stroke-width="1.5"/>
+      <circle cx="714" cy="395" r="7" fill="#A78BFA"/>
+      <text x="736" y="391" class="t" font-size="15.5" font-weight="700" fill="#F1F5F9">3. Bilingual Astro Build (VI / EN)</text>
+      <text x="736" y="412" class="m" font-size="11.5" fill="#A78BFA">WebP optimized • Live on toanlb.dev</text>
+
+      <text x="664" y="464" class="m" font-size="12" font-weight="700" fill="#34D399">NO UNTESTED SNIPPETS</text>
+      <text x="1140" y="464" text-anchor="end" class="m" font-size="12" font-weight="700" fill="#A78BFA">CF PAGES READY</text>
     </g>
 
     <rect x="0.75" y="0.75" width="1198.5" height="518.5" rx="19.25" fill="none" stroke="#1E293B" stroke-width="1.5"/>
