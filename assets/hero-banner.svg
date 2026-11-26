@@ -1,0 +1,665 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Toan Luong (ToanLB) - Unity Developer and Automotive HMI Engineer">
+  <defs>
+    <radialGradient id="glowLeft" cx="0.18" cy="0.2" r="0.6">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0A0F1E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0.82" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0A0F1E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gShine" x1="-300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+      <animate attributeName="x1" values="-350;1200" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1550" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="gRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="55%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="meshFade" x1="0.35" y1="0" x2="0.95" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="meshMask"><rect width="1200" height="440" fill="url(#meshFade)"/></mask>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.45"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="440" rx="22"/></clipPath>
+    <clipPath id="avatarClip"><circle cx="980" cy="205" r="134"/></clipPath>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <style>
+      .bob { animation: bobAnim 4s ease-in-out infinite; }
+      @keyframes bobAnim { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="440" fill="#0A0F1E"/>
+    <rect width="1200" height="440" fill="url(#dots)"/>
+    <rect width="1200" height="440" fill="url(#glowLeft)"/>
+    <rect width="1200" height="440" fill="url(#glowRight)"/>
+
+    <!-- Elastic Abstract Particle Constellation Mesh -->
+    <g mask="url(#meshMask)">
+      
+    <line x1="520" y1="58" x2="615" y2="96" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="520;546;520" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="58;40;58" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-0.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="615" y1="96" x2="718" y2="64" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="718" y1="64" x2="810" y2="48" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="810;792;810" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="48;74;48" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="520" y1="58" x2="565" y2="175" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="520;546;520" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="58;40;58" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-1.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="615" y1="96" x2="565" y2="175" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-1.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="615" y1="96" x2="672" y2="152" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-2.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="718" y1="64" x2="672" y2="152" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-2.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="718" y1="64" x2="770" y2="148" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-2.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="810" y1="48" x2="860" y2="118" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="810;792;810" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="48;74;48" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-3.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="565" y1="175" x2="672" y2="152" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-3.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="672" y1="152" x2="770" y2="148" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-4.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="770" y1="148" x2="860" y2="118" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-4.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="565" y1="175" x2="630" y2="248" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-4.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="672" y1="152" x2="630" y2="248" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-5.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="672" y1="152" x2="736" y2="232" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-5.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="770" y1="148" x2="736" y2="232" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-6.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="770" y1="148" x2="818" y2="224" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-6.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="860" y1="118" x2="818" y2="224" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-6.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="630" y1="248" x2="736" y2="232" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-7.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="736" y1="232" x2="818" y2="224" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-7.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="630" y1="248" x2="678" y2="342" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-8.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="736" y1="232" x2="678" y2="342" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-8.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="736" y1="232" x2="768" y2="318" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-8.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="818" y1="224" x2="768" y2="318" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-9.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="818" y1="224" x2="835" y2="342" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-9.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="678" y1="342" x2="768" y2="318" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-10.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="768" y1="318" x2="835" y2="342" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-10.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="678" y1="342" x2="730" y2="405" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="730;706;730" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="405;389;405" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-10.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="768" y1="318" x2="730" y2="405" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="730;706;730" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="405;389;405" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-11.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="835" y1="342" x2="895" y2="396" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="895;917;895" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="396;376;396" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-11.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="730" y1="405" x2="895" y2="396" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="730;706;730" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="405;389;405" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="895;917;895" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="396;376;396" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-12.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1122" y1="82" x2="1152" y2="205" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="1122;1104;1122" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="82;106;82" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1152;1136;1152" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="205;179;205" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-12.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1152" y1="205" x2="1118" y2="336" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="1152;1136;1152" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="205;179;205" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1118;1136;1118" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="336;314;336" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="4.6s" begin="-12.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1118" y1="336" x2="1062" y2="404" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="1118;1136;1118" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="336;314;336" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1062;1042;1062" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="404;420;404" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="5.3s" begin="-13.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="860" y1="118" x2="1122" y2="82" stroke="#2DD4BF" stroke-width="1.35">
+      <animate attributeName="x1" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1122;1104;1122" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="82;106;82" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="6.0s" begin="-13.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="835" y1="342" x2="1118" y2="336" stroke="#64748B" stroke-width="1.35">
+      <animate attributeName="x1" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1118;1136;1118" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="336;314;336" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.2s" begin="-14.0s" repeatCount="indefinite"/>
+    </line>
+    <line x1="895" y1="396" x2="1062" y2="404" stroke="#38BDF8" stroke-width="1.35">
+      <animate attributeName="x1" values="895;917;895" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="396;376;396" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1062;1042;1062" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="404;420;404" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.16;0.58;0.16" dur="3.9s" begin="-14.4s" repeatCount="indefinite"/>
+    </line>
+      
+    <g>
+      <circle cx="520" cy="58" r="6.7" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="520;546;520" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="58;40;58" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="520" cy="58" r="2.8" fill="#38BDF8">
+        <animate attributeName="cx" values="520;546;520" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="58;40;58" dur="7.2s" begin="-1.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="615" cy="96" r="7.7" fill="#2DD4BF" opacity="0.18">
+        <animate attributeName="cx" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="615" cy="96" r="3.2" fill="#2DD4BF">
+        <animate attributeName="cx" values="615;593;615" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="96;120;96" dur="8.5s" begin="-2.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="718" cy="64" r="8.2" fill="#FBBF24" opacity="0.18">
+        <animate attributeName="cx" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="718" cy="64" r="3.4" fill="#FBBF24">
+        <animate attributeName="cx" values="718;742;718" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="64;84;64" dur="6.8s" begin="-0.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="810" cy="48" r="7.2" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="810;792;810" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="48;74;48" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="810" cy="48" r="3.0" fill="#38BDF8">
+        <animate attributeName="cx" values="810;792;810" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="48;74;48" dur="9.1s" begin="-3.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="565" cy="175" r="6.2" fill="#A78BFA" opacity="0.18">
+        <animate attributeName="cx" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="565" cy="175" r="2.6" fill="#A78BFA">
+        <animate attributeName="cx" values="565;593;565" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="175;191;175" dur="7.8s" begin="-4.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="672" cy="152" r="8.4" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="672" cy="152" r="3.5" fill="#38BDF8">
+        <animate attributeName="cx" values="672;648;672" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="152;130;152" dur="6.4s" begin="-1.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="770" cy="148" r="7.9" fill="#FBBF24" opacity="0.18">
+        <animate attributeName="cx" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="770" cy="148" r="3.3" fill="#FBBF24">
+        <animate attributeName="cx" values="770;790;770" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="148;176;148" dur="8.2s" begin="-5.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="860" cy="118" r="7.4" fill="#2DD4BF" opacity="0.18">
+        <animate attributeName="cx" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="860" cy="118" r="3.1" fill="#2DD4BF">
+        <animate attributeName="cx" values="860;834;860" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="118;136;118" dur="7.5s" begin="-2.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="630" cy="248" r="7.2" fill="#2DD4BF" opacity="0.18">
+        <animate attributeName="cx" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="630" cy="248" r="3.0" fill="#2DD4BF">
+        <animate attributeName="cx" values="630;652;630" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="248;224;248" dur="9.4s" begin="-0.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="736" cy="232" r="8.6" fill="#FBBF24" opacity="0.18">
+        <animate attributeName="cx" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="736" cy="232" r="3.6" fill="#FBBF24">
+        <animate attributeName="cx" values="736;708;736" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="232;254;232" dur="7.1s" begin="-3.6s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="818" cy="224" r="7.7" fill="#A78BFA" opacity="0.18">
+        <animate attributeName="cx" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="818" cy="224" r="3.2" fill="#A78BFA">
+        <animate attributeName="cx" values="818;836;818" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="224;198;224" dur="8.7s" begin="-1.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="678" cy="342" r="7.4" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="678" cy="342" r="3.1" fill="#38BDF8">
+        <animate attributeName="cx" values="678;704;678" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="342;362;342" dur="6.9s" begin="-2.8s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="768" cy="318" r="8.2" fill="#2DD4BF" opacity="0.18">
+        <animate attributeName="cx" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="768" cy="318" r="3.4" fill="#2DD4BF">
+        <animate attributeName="cx" values="768;746;768" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="318;294;318" dur="8.9s" begin="-4.5s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="835" cy="342" r="7.2" fill="#FBBF24" opacity="0.18">
+        <animate attributeName="cx" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="835" cy="342" r="3.0" fill="#FBBF24">
+        <animate attributeName="cx" values="835;855;835" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="342;364;342" dur="7.4s" begin="-0.7s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="730" cy="405" r="6.7" fill="#A78BFA" opacity="0.18">
+        <animate attributeName="cx" values="730;706;730" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="405;389;405" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="730" cy="405" r="2.8" fill="#A78BFA">
+        <animate attributeName="cx" values="730;706;730" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="405;389;405" dur="9.2s" begin="-3.0s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="895" cy="396" r="7.2" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="895;917;895" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="396;376;396" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="895" cy="396" r="3.0" fill="#38BDF8">
+        <animate attributeName="cx" values="895;917;895" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="396;376;396" dur="8.0s" begin="-1.9s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="1122" cy="82" r="7.4" fill="#2DD4BF" opacity="0.18">
+        <animate attributeName="cx" values="1122;1104;1122" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="82;106;82" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1122" cy="82" r="3.1" fill="#2DD4BF">
+        <animate attributeName="cx" values="1122;1104;1122" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="82;106;82" dur="7.6s" begin="-2.1s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="1152" cy="205" r="7.9" fill="#FBBF24" opacity="0.18">
+        <animate attributeName="cx" values="1152;1136;1152" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="205;179;205" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1152" cy="205" r="3.3" fill="#FBBF24">
+        <animate attributeName="cx" values="1152;1136;1152" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="205;179;205" dur="8.4s" begin="-0.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="1118" cy="336" r="7.2" fill="#A78BFA" opacity="0.18">
+        <animate attributeName="cx" values="1118;1136;1118" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="336;314;336" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1118" cy="336" r="3.0" fill="#A78BFA">
+        <animate attributeName="cx" values="1118;1136;1118" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="336;314;336" dur="7.0s" begin="-3.3s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="1062" cy="404" r="6.7" fill="#38BDF8" opacity="0.18">
+        <animate attributeName="cx" values="1062;1042;1062" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="404;420;404" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.06;0.32;0.06" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1062" cy="404" r="2.8" fill="#38BDF8">
+        <animate attributeName="cx" values="1062;1042;1062" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="404;420;404" dur="8.8s" begin="-1.2s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    </g>
+
+    <text x="58" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600" letter-spacing="0.14em" fill="#38BDF8">HANOI, VIETNAM  &#x2022;  TOANLB.DEV</text>
+
+    <text x="56" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-1.5" fill="#F1F5F9">Toan Luong</text>
+    <text x="56" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-1.5" fill="url(#gShine)">Toan Luong</text>
+
+    <text x="58" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#CBD5E1">Unity Game Developer  &#x2022;  Automotive HMI Software Engineer</text>
+    <text x="58" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" fill="#94A3B8">Building deterministic real-time graphics, mobile games, and embedded vehicle interfaces.</text>
+
+    
+    <g>
+      <rect x="56" y="278" width="164" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="56" y="278" width="164" height="42" rx="21" fill="#2DD4BF" fill-opacity="0.16" stroke="#2DD4BF" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0000;0.0300;0.1100;0.1400;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="78" cy="299" r="4.5" fill="#2DD4BF"/>
+      <text x="92" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">Unity Engine</text>
+    </g>
+    <g>
+      <rect x="232" y="278" width="174" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="232" y="278" width="174" height="42" rx="21" fill="#60A5FA" fill-opacity="0.16" stroke="#60A5FA" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1429;0.1729;0.2529;0.2829;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="254" cy="299" r="4.5" fill="#60A5FA"/>
+      <text x="268" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">Unreal Engine</text>
+    </g>
+    <g>
+      <rect x="418" y="278" width="188" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="418" y="278" width="188" height="42" rx="21" fill="#FBBF24" fill-opacity="0.16" stroke="#FBBF24" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2857;0.3157;0.3957;0.4257;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="440" cy="299" r="4.5" fill="#FBBF24"/>
+      <text x="454" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">Automotive HMI</text>
+    </g>
+    <g>
+      <rect x="618" y="278" width="134" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="618" y="278" width="134" height="42" rx="21" fill="#A78BFA" fill-opacity="0.16" stroke="#A78BFA" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4286;0.4586;0.5386;0.5686;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="640" cy="299" r="4.5" fill="#A78BFA"/>
+      <text x="654" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">C# / C++</text>
+    </g>
+    <g>
+      <rect x="56" y="336" width="172" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="56" y="336" width="172" height="42" rx="21" fill="#2DD4BF" fill-opacity="0.16" stroke="#2DD4BF" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5714;0.6014;0.6814;0.7114;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="78" cy="357" r="4.5" fill="#2DD4BF"/>
+      <text x="92" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">Zero GC Alloc</text>
+    </g>
+    <g>
+      <rect x="240" y="336" width="212" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="240" y="336" width="212" height="42" rx="21" fill="#FBBF24" fill-opacity="0.16" stroke="#FBBF24" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7143;0.7443;0.8243;0.8543;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="262" cy="357" r="4.5" fill="#FBBF24"/>
+      <text x="276" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">Rendering &amp; Shader</text>
+    </g>
+    <g>
+      <rect x="464" y="336" width="166" height="42" rx="21" fill="#111A30" stroke="#1F2B47" stroke-width="1.4"/>
+      <rect x="464" y="336" width="166" height="42" rx="21" fill="#60A5FA" fill-opacity="0.16" stroke="#60A5FA" stroke-width="1.8" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8571;0.8871;0.9671;0.9971;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="486" cy="357" r="4.5" fill="#60A5FA"/>
+      <text x="500" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E8EEF9">AAOS &amp; QNX</text>
+    </g>
+
+    <g>
+      <circle cx="980" cy="205" r="134" fill="none" stroke="#2DD4BF" stroke-width="1.8">
+        <animate attributeName="r" values="134;182" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <image x="846" y="71" width="268" height="268" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)" xlink:href="data:image/jpeg;base64,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"/>
+      <circle cx="980" cy="205" r="134" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+      <circle cx="980" cy="205" r="147" fill="none" stroke="#1F2B47" stroke-width="1.8"/>
+
+      <circle cx="980" cy="205" r="154" fill="none" stroke="url(#gRing)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="250 720">
+        <animateTransform attributeName="transform" type="rotate" from="0 980 205" to="360 980 205" dur="9s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="980" cy="205" r="166" fill="none" stroke="#94A3B8" stroke-opacity="0.45" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 12">
+        <animateTransform attributeName="transform" type="rotate" from="360 980 205" to="0 980 205" dur="36s" repeatCount="indefinite"/>
+      </circle>
+
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 980 205" to="360 980 205" dur="16s" repeatCount="indefinite"/>
+        <circle cx="1146" cy="205" r="5" fill="#2DD4BF"/>
+        <circle cx="1146" cy="205" r="11" fill="#2DD4BF" opacity="0.28" filter="url(#softGlow)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="120 980 205" to="480 980 205" dur="16s" repeatCount="indefinite"/>
+        <circle cx="1146" cy="205" r="5" fill="#FBBF24"/>
+        <circle cx="1146" cy="205" r="11" fill="#FBBF24" opacity="0.28" filter="url(#softGlow)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="240 980 205" to="600 980 205" dur="16s" repeatCount="indefinite"/>
+        <circle cx="1146" cy="205" r="5" fill="#A78BFA"/>
+        <circle cx="1146" cy="205" r="11" fill="#A78BFA" opacity="0.28" filter="url(#softGlow)"/>
+      </g>
+    </g>
+
+    <g class="bob">
+      <rect x="868" y="362" width="224" height="40" rx="20" fill="#111A30" stroke="#2DD4BF" stroke-opacity="0.65" stroke-width="1.5"/>
+      <circle cx="892" cy="382" r="5" fill="#22C55E">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="907" y="387" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="700" fill="#E8EEF9">Unity &amp; Embedded HMI</text>
+    </g>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="438.5" rx="21.25" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://toanlb.dev/en/">
-    <img src="./assets/profile-header.svg" alt="Toan Luong (ToanLB) - Unity Developer & Automotive HMI Engineer" width="100%" />
+    <img src="./assets/hero-banner.svg" alt="Toan Luong (ToanLB) - Unity Developer & Automotive HMI Engineer" width="100%" />
   </a>
 </div>
 
