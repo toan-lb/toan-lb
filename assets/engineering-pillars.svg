@@ -1,0 +1,31 @@
+<svg width="860" height="168" viewBox="0 0 860 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card 1: Unity & Mobile Games -->
+  <rect x="1" y="1" width="272" height="166" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+  <rect x="1" y="1" width="272" height="4" rx="2" fill="#38bdf8"/>
+  <text x="20" y="34" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="0.08em">01 // GAME ARCHITECTURE</text>
+  <text x="20" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700">Unity &amp; Mobile Performance</text>
+  <text x="20" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Pure C# DI, MVP &amp; Decoupling</text>
+  <text x="20" y="110" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Zero GC Alloc &amp; Object Pooling</text>
+  <text x="20" y="132" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Addressables &amp; SRP Batcher</text>
+  <text x="20" y="152" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5">Lead Dev &amp; PO Experience</text>
+
+  <!-- Card 2: Automotive HMI -->
+  <rect x="294" y="1" width="272" height="166" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+  <rect x="294" y="1" width="272" height="4" rx="2" fill="#fbbf24"/>
+  <text x="313" y="34" fill="#fbbf24" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="0.08em">02 // EMBEDDED REAL-TIME</text>
+  <text x="313" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700">Automotive HMI Systems</text>
+  <text x="313" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Digital Cluster &amp; IVI Apps</text>
+  <text x="313" y="110" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Android Automotive (AAOS) &amp; QNX</text>
+  <text x="313" y="132" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Unity &amp; Unreal Optimization</text>
+  <text x="313" y="152" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5">Strict Embedded Constraints</text>
+
+  <!-- Card 3: Technical Writing -->
+  <rect x="587" y="1" width="272" height="166" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+  <rect x="587" y="1" width="272" height="4" rx="2" fill="#34d399"/>
+  <text x="606" y="34" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="0.08em">03 // ENGINEERING NOTES</text>
+  <text x="606" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700">toanlb.dev Deep Dives</text>
+  <text x="606" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Bilingual Tech Articles (VI / EN)</text>
+  <text x="606" y="110" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Architectural Trade-off Analysis</text>
+  <text x="606" y="132" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5">&#x2022; Roslyn &amp; NUnit Verified Code</text>
+  <text x="606" y="152" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5">Tested Before Publishing</text>
+</svg>
