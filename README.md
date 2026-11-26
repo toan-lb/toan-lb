@@ -48,6 +48,18 @@ Started with a degree in **Electronics & Telecommunications Engineering**, spent
 
 I write practical, benchmark-backed notes at **[toanlb.dev](https://toanlb.dev/en/)** — digging into *why* an architecture holds up or breaks under real hardware constraints rather than stopping at "it works on my machine."
 
+<br/>
+
+<div align="center">
+  <img src="./assets/game-loop-architecture.svg" alt="Real-Time Game Loop and Automotive HMI Architecture" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="./assets/daily-craft-ide.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
+</div>
+
 ---
 
 ### Featured Projects & Open Source
