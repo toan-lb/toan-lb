@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://toanlb.dev/en/">
-    <img src="./assets/hero-banner.svg" alt="Toan Luong (ToanLB) - Unity Game Developer & Automotive HMI" width="100%" />
+    <img src="./assets/hero-banner-v2.svg" alt="Toan Luong (ToanLB) - Unity Game Developer & Automotive HMI" width="100%" />
   </a>
 </div>
 
