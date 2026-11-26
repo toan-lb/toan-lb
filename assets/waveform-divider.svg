@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" fill="none">
+  <defs>
+    <linearGradient id="waveGrad1" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#2dd4bf" stop-opacity="0.85"/>
+      <stop offset="75%" stop-color="#fbbf24" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.5"/>
+      <stop offset="65%" stop-color="#a78bfa" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="wClip"><rect width="1200" height="64"/></clipPath>
+  </defs>
+  <g clip-path="url(#wClip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-400 0" dur="5s" repeatCount="indefinite"/>
+      <path d="M0 32 Q 100 8, 200 32 T 400 32 T 600 32 T 800 32 T 1000 32 T 1200 32 T 1400 32 T 1600 32" stroke="url(#waveGrad1)" stroke-width="2.2" fill="none"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="-400 0" to="0 0" dur="7s" repeatCount="indefinite"/>
+      <path d="M0 32 Q 100 54, 200 32 T 400 32 T 600 32 T 800 32 T 1000 32 T 1200 32 T 1400 32 T 1600 32" stroke="url(#waveGrad2)" stroke-width="1.6" fill="none"/>
+    </g>
+  </g>
+</svg>
