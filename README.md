@@ -51,13 +51,13 @@ I write practical, benchmark-backed notes at **[toanlb.dev](https://toanlb.dev/e
 <br/>
 
 <div align="center">
-  <img src="./assets/game-loop-architecture.svg" alt="Real-Time Game Loop and Automotive HMI Architecture" width="100%" />
+  <img src="./assets/craft-pipeline.svg" alt="Symphony of a Builder - Games, Automotive HMI, and ToanLB Craft Pipeline" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/daily-craft-ide.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
+  <img src="./assets/workbench-ide.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
 </div>
 
 ---
