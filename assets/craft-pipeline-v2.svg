@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="What Goes In, What Gets Crafted - Games, Automotive HMI, and ToanLB">
+  <defs>
+    <radialGradient id="cGlow" cx="0.5" cy="0.52" r="0.40">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.16"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0A0F1E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringArc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#DFB15B"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="bus1" x1="332" y1="0" x2="468" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2dd4bf"/><stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="bus2" x1="332" y1="0" x2="468" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="bus3" x1="332" y1="0" x2="468" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="busR1" x1="732" y1="0" x2="868" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="busR2" x1="732" y1="0" x2="868" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="busR3" x1="732" y1="0" x2="868" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f472b6"/><stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <pattern id="archDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.4"/>
+    </pattern>
+    <clipPath id="archFrame"><rect width="1200" height="560" rx="22"/></clipPath>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .m { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .flow { stroke-dasharray: 14 14; animation: flowAnim 1.3s linear infinite; }
+      .spin { transform-box: fill-box; transform-origin: center; animation: spinCW 24s linear infinite; }
+      .spinR { transform-box: fill-box; transform-origin: center; animation: spinCCW 42s linear infinite; }
+      @keyframes flowAnim { to { stroke-dashoffset: -56; } }
+      @keyframes spinCW { to { transform: rotate(360deg); } }
+      @keyframes spinCCW { to { transform: rotate(-360deg); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#archFrame)">
+    <rect width="1200" height="560" fill="#080D1A"/>
+    <rect width="1200" height="560" fill="url(#archDots)"/>
+    <rect width="1200" height="560" fill="url(#cGlow)"/>
+
+    <text x="600" y="48" text-anchor="middle" class="m" font-size="13" font-weight="700" letter-spacing="0.16em" fill="#38BDF8">SYMPHONY OF A BUILDER  •  CRAFT PIPELINE</text>
+    <text x="600" y="82" text-anchor="middle" class="t" font-size="27" font-weight="800" fill="#F8FAFC">The Ingredients That Craft Games, HMI &amp; Myself</text>
+
+    <path d="M 332 186 C 405 186, 415 270, 468 286" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 332 186 C 405 186, 415 270, 468 286" stroke="url(#bus1)" stroke-width="2.2" fill="none" class="flow"/>
+    <path d="M 332 295 L 465 295" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 332 295 L 465 295" stroke="url(#bus2)" stroke-width="2.2" fill="none" class="flow"/>
+    <path d="M 332 404 C 405 404, 415 320, 468 304" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 332 404 C 405 404, 415 320, 468 304" stroke="url(#bus3)" stroke-width="2.2" fill="none" class="flow"/>
+
+    <path d="M 732 286 C 785 270, 795 186, 868 186" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 732 286 C 785 270, 795 186, 868 186" stroke="url(#busR1)" stroke-width="2.2" fill="none" class="flow"/>
+    <path d="M 735 295 L 868 295" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 735 295 L 868 295" stroke="url(#busR2)" stroke-width="2.2" fill="none" class="flow"/>
+    <path d="M 732 304 C 785 320, 795 404, 868 404" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 732 304 C 785 320, 795 404, 868 404" stroke="url(#busR3)" stroke-width="2.2" fill="none" class="flow"/>
+    <circle r="4.5" fill="#2DD4BF"><animateMotion path="M 332 186 C 405 186, 415 270, 468 286" dur="2.6s" begin="0s" repeatCount="indefinite"/></circle><circle r="4.5" fill="#FBBF24"><animateMotion path="M 332 295 L 465 295" dur="2.2s" begin="-0.8s" repeatCount="indefinite"/></circle><circle r="4.5" fill="#A78BFA"><animateMotion path="M 332 404 C 405 404, 415 320, 468 304" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/></circle><circle r="4.5" fill="#2DD4BF"><animateMotion path="M 732 286 C 785 270, 795 186, 868 186" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/></circle><circle r="4.5" fill="#FBBF24"><animateMotion path="M 735 295 L 868 295" dur="2.2s" begin="-1.8s" repeatCount="indefinite"/></circle><circle r="4.5" fill="#A78BFA"><animateMotion path="M 732 304 C 785 320, 795 404, 868 404" dur="2.8s" begin="-0.4s" repeatCount="indefinite"/></circle>
+
+    <!-- Left Pillar -->
+    <text x="52" y="122" class="m" font-size="12" font-weight="700" letter-spacing="0.12em" fill="#94A3B8">WHAT GOES IN</text>
+    <rect x="52" y="140" width="280" height="92" rx="14" fill="#111A30" stroke="#2DD4BF" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="78" cy="170" r="5" fill="#2DD4BF"/>
+    <text x="94" y="175" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Code, Art &amp; Game Design</text>
+    <text x="74" y="200" class="t" font-size="13" fill="#94A3B8">Game feel, shaders &amp; puzzle flow</text>
+    <text x="74" y="218" class="m" font-size="11.5" fill="#2DD4BF">Where logic becomes play</text>
+
+    <rect x="52" y="249" width="280" height="92" rx="14" fill="#111A30" stroke="#FBBF24" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="78" cy="279" r="5" fill="#FBBF24"/>
+    <text x="94" y="284" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Unity, Unreal, C# &amp; C++</text>
+    <text x="74" y="309" class="t" font-size="13" fill="#94A3B8">CAN bus, AAOS, QNX &amp; 16.6ms</text>
+    <text x="74" y="327" class="m" font-size="11.5" fill="#FBBF24">Hard engineering constraints</text>
+
+    <rect x="52" y="358" width="280" height="92" rx="14" fill="#111A30" stroke="#A78BFA" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="78" cy="388" r="5" fill="#A78BFA"/>
+    <text x="94" y="393" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Life, Grit &amp; Late Nights</text>
+    <text x="74" y="418" class="t" font-size="13" fill="#94A3B8">Scars, writing, curiosity &amp; family</text>
+    <text x="74" y="436" class="m" font-size="11.5" fill="#A78BFA">Every sharp &amp; flat note lived</text>
+
+    <!-- Luxury EV-style Craft Core Gauge -->
+    <circle cx="600" cy="295" r="144" fill="#070C18" stroke="#1C2D5A" stroke-width="1.5"/>
+    <circle cx="600" cy="295" r="132" fill="none" stroke="#38BDF8" stroke-opacity="0.16" stroke-width="1">
+      <animate attributeName="r" values="126;156" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="295" r="134" fill="none" stroke="url(#ringArc)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="190 650" class="spin"/>
+    <circle cx="600" cy="295" r="124" fill="none" stroke="#4FACFE" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="3 9" class="spinR"/>
+
+    <!-- Thin glowing luxury arc track -->
+    <path d="M 521 360 A 102 102 0 1 1 679 360" fill="none" stroke="#101D3A" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 521 360 A 102 102 0 1 1 679 360" fill="none" stroke="url(#ringArc)" stroke-width="4" stroke-linecap="round" filter="url(#glowSoft)"/>
+    <circle cx="600" cy="295" r="82" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    <line x1="511.5" y1="356.9" x2="505.8" y2="361.0" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="502.1" y1="340.6" x2="495.8" y2="343.6" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="495.7" y1="323.0" x2="488.9" y2="324.8" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="492.4" y1="304.4" x2="485.4" y2="305.0" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="492.4" y1="285.6" x2="485.4" y2="285.0" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="495.7" y1="267.0" x2="488.9" y2="265.2" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="502.1" y1="249.4" x2="495.8" y2="246.4" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="511.5" y1="233.1" x2="505.8" y2="229.0" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="523.6" y1="218.6" x2="518.7" y2="213.7" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="538.1" y1="206.5" x2="534.0" y2="200.8" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="554.4" y1="197.1" x2="551.4" y2="190.8" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="572.0" y1="190.7" x2="570.2" y2="183.9" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="590.6" y1="187.4" x2="590.0" y2="180.4" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="609.4" y1="187.4" x2="610.0" y2="180.4" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="628.0" y1="190.7" x2="629.8" y2="183.9" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="645.6" y1="197.1" x2="648.6" y2="190.8" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="661.9" y1="206.5" x2="666.0" y2="200.8" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="676.4" y1="218.6" x2="681.3" y2="213.7" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="688.5" y1="233.1" x2="694.2" y2="229.0" stroke="#334155" stroke-width="1.1" stroke-linecap="round"/><line x1="697.9" y1="249.4" x2="704.2" y2="246.4" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="704.3" y1="267.0" x2="711.1" y2="265.2" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="707.6" y1="285.6" x2="714.6" y2="285.0" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="707.6" y1="304.4" x2="714.6" y2="305.0" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="704.3" y1="323.0" x2="711.1" y2="324.8" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="697.9" y1="340.6" x2="704.2" y2="343.6" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/><line x1="688.5" y1="356.9" x2="694.2" y2="361.0" stroke="#DFB15B" stroke-width="1.1" stroke-linecap="round"/>
+
+    <!-- Floating Gold Outer Pointer Notch (no chunky stick!) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-115 600 295; 0 600 295; 105 600 295; -35 600 295; -115 600 295" dur="8.5s" repeatCount="indefinite"/>
+      <polygon points="600,198 606,211 594,211" fill="#DFB15B" filter="url(#glowSoft)"/>
+    </g>
+
+    <!-- Ultra-clean light digital readout -->
+    <text x="600" y="294" text-anchor="middle" class="t" font-size="40" font-weight="200" letter-spacing="-1" fill="#FFFFFF">60</text>
+    <text x="600" y="314" text-anchor="middle" class="m" font-size="10.5" font-weight="600" letter-spacing="3.5" fill="#00F2FE">FPS • 16.6MS</text>
+    <rect x="556" y="330" width="88" height="20" rx="10" fill="#132247" stroke="#4FACFE" stroke-opacity="0.5" stroke-width="0.9"/>
+    <text x="600" y="343.5" text-anchor="middle" class="m" font-size="9.5" font-weight="700" letter-spacing="1.4" fill="#E2E8F0">CRAFT CORE</text>
+
+    <!-- Right Pillar -->
+    <text x="868" y="122" class="m" font-size="12" font-weight="700" letter-spacing="0.12em" fill="#94A3B8">WHAT GETS CRAFTED</text>
+    <rect x="868" y="140" width="280" height="92" rx="14" fill="#111A30" stroke="#2DD4BF" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="894" cy="170" r="5" fill="#2DD4BF"/>
+    <text x="910" y="175" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Crafted Games</text>
+    <text x="890" y="200" class="t" font-size="13" fill="#94A3B8">Mobile puzzles, 3D voxels &amp; fun</text>
+    <text x="890" y="218" class="m" font-size="11.5" fill="#2DD4BF">Built for players to smile</text>
+
+    <rect x="868" y="249" width="280" height="92" rx="14" fill="#111A30" stroke="#FBBF24" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="894" cy="279" r="5" fill="#FBBF24"/>
+    <text x="910" y="284" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Crafted Automotive HMI</text>
+    <text x="890" y="309" class="t" font-size="13" fill="#94A3B8">Cluster &amp; IVI cockpits on road</text>
+    <text x="890" y="327" class="m" font-size="11.5" fill="#FBBF24">Zero-judder embedded UI</text>
+
+    <rect x="868" y="358" width="280" height="92" rx="14" fill="#111A30" stroke="#A78BFA" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="894" cy="388" r="5" fill="#A78BFA"/>
+    <text x="910" y="393" class="t" font-size="16" font-weight="700" fill="#F1F5F9">Crafted ToanLB</text>
+    <text x="890" y="418" class="t" font-size="13" fill="#94A3B8">toanlb.dev, community &amp; growth</text>
+    <text x="890" y="436" class="m" font-size="11.5" fill="#A78BFA">Still composing every next note</text>
+
+    <text x="240" y="492" class="m" font-size="11" font-weight="700" letter-spacing="0.1em" fill="#64748B">BUILDER'S SYMPHONY  •  GAMES  •  AUTOMOTIVE HMI  •  TOANLB</text>
+    <rect x="240" y="514" width="12" height="18" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="6;18;6" dur="1.10s" begin="-0.00s" repeatCount="indefinite"/><animate attributeName="y" values="526;514;526" dur="1.10s" begin="-0.00s" repeatCount="indefinite"/></rect><rect x="266" y="503" width="12" height="29" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="11;29;11" dur="1.35s" begin="-0.17s" repeatCount="indefinite"/><animate attributeName="y" values="521;503;521" dur="1.35s" begin="-0.17s" repeatCount="indefinite"/></rect><rect x="292" y="512" width="12" height="20" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="8;20;8" dur="1.60s" begin="-0.34s" repeatCount="indefinite"/><animate attributeName="y" values="524;512;524" dur="1.60s" begin="-0.34s" repeatCount="indefinite"/></rect><rect x="318" y="501" width="12" height="31" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="13;31;13" dur="1.85s" begin="-0.51s" repeatCount="indefinite"/><animate attributeName="y" values="519;501;519" dur="1.85s" begin="-0.51s" repeatCount="indefinite"/></rect><rect x="344" y="510" width="12" height="22" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="10;22;10" dur="2.10s" begin="-0.68s" repeatCount="indefinite"/><animate attributeName="y" values="522;510;522" dur="2.10s" begin="-0.68s" repeatCount="indefinite"/></rect><rect x="370" y="499" width="12" height="33" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="7;33;7" dur="1.10s" begin="-0.85s" repeatCount="indefinite"/><animate attributeName="y" values="525;499;525" dur="1.10s" begin="-0.85s" repeatCount="indefinite"/></rect><rect x="396" y="508" width="12" height="24" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="12;24;12" dur="1.35s" begin="-1.02s" repeatCount="indefinite"/><animate attributeName="y" values="520;508;520" dur="1.35s" begin="-1.02s" repeatCount="indefinite"/></rect><rect x="422" y="497" width="12" height="35" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="9;35;9" dur="1.60s" begin="-1.19s" repeatCount="indefinite"/><animate attributeName="y" values="523;497;523" dur="1.60s" begin="-1.19s" repeatCount="indefinite"/></rect><rect x="448" y="506" width="12" height="26" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="6;26;6" dur="1.85s" begin="-1.36s" repeatCount="indefinite"/><animate attributeName="y" values="526;506;526" dur="1.85s" begin="-1.36s" repeatCount="indefinite"/></rect><rect x="474" y="495" width="12" height="37" rx="3" fill="#2dd4bf" opacity="0.85"><animate attributeName="height" values="11;37;11" dur="2.10s" begin="-1.53s" repeatCount="indefinite"/><animate attributeName="y" values="521;495;521" dur="2.10s" begin="-1.53s" repeatCount="indefinite"/></rect><rect x="500" y="504" width="12" height="28" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="8;28;8" dur="1.10s" begin="-1.70s" repeatCount="indefinite"/><animate attributeName="y" values="524;504;524" dur="1.10s" begin="-1.70s" repeatCount="indefinite"/></rect><rect x="526" y="513" width="12" height="19" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="13;19;13" dur="1.35s" begin="-1.87s" repeatCount="indefinite"/><animate attributeName="y" values="519;513;519" dur="1.35s" begin="-1.87s" repeatCount="indefinite"/></rect><rect x="552" y="502" width="12" height="30" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="10;30;10" dur="1.60s" begin="-2.04s" repeatCount="indefinite"/><animate attributeName="y" values="522;502;522" dur="1.60s" begin="-2.04s" repeatCount="indefinite"/></rect><rect x="578" y="511" width="12" height="21" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="7;21;7" dur="1.85s" begin="-2.21s" repeatCount="indefinite"/><animate attributeName="y" values="525;511;525" dur="1.85s" begin="-2.21s" repeatCount="indefinite"/></rect><rect x="604" y="500" width="12" height="32" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="12;32;12" dur="2.10s" begin="-2.38s" repeatCount="indefinite"/><animate attributeName="y" values="520;500;520" dur="2.10s" begin="-2.38s" repeatCount="indefinite"/></rect><rect x="630" y="509" width="12" height="23" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="9;23;9" dur="1.10s" begin="-2.55s" repeatCount="indefinite"/><animate attributeName="y" values="523;509;523" dur="1.10s" begin="-2.55s" repeatCount="indefinite"/></rect><rect x="656" y="498" width="12" height="34" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="6;34;6" dur="1.35s" begin="-2.72s" repeatCount="indefinite"/><animate attributeName="y" values="526;498;526" dur="1.35s" begin="-2.72s" repeatCount="indefinite"/></rect><rect x="682" y="507" width="12" height="25" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="11;25;11" dur="1.60s" begin="-2.89s" repeatCount="indefinite"/><animate attributeName="y" values="521;507;521" dur="1.60s" begin="-2.89s" repeatCount="indefinite"/></rect><rect x="708" y="496" width="12" height="36" rx="3" fill="#fbbf24" opacity="0.85"><animate attributeName="height" values="8;36;8" dur="1.85s" begin="-3.06s" repeatCount="indefinite"/><animate attributeName="y" values="524;496;524" dur="1.85s" begin="-3.06s" repeatCount="indefinite"/></rect><rect x="734" y="505" width="12" height="27" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="13;27;13" dur="2.10s" begin="-3.23s" repeatCount="indefinite"/><animate attributeName="y" values="519;505;519" dur="2.10s" begin="-3.23s" repeatCount="indefinite"/></rect><rect x="760" y="514" width="12" height="18" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="10;18;10" dur="1.10s" begin="-3.40s" repeatCount="indefinite"/><animate attributeName="y" values="522;514;522" dur="1.10s" begin="-3.40s" repeatCount="indefinite"/></rect><rect x="786" y="503" width="12" height="29" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="7;29;7" dur="1.35s" begin="-3.57s" repeatCount="indefinite"/><animate attributeName="y" values="525;503;525" dur="1.35s" begin="-3.57s" repeatCount="indefinite"/></rect><rect x="812" y="512" width="12" height="20" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="12;20;12" dur="1.60s" begin="-3.74s" repeatCount="indefinite"/><animate attributeName="y" values="520;512;520" dur="1.60s" begin="-3.74s" repeatCount="indefinite"/></rect><rect x="838" y="501" width="12" height="31" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="9;31;9" dur="1.85s" begin="-3.91s" repeatCount="indefinite"/><animate attributeName="y" values="523;501;523" dur="1.85s" begin="-3.91s" repeatCount="indefinite"/></rect><rect x="864" y="510" width="12" height="22" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="6;22;6" dur="2.10s" begin="-4.08s" repeatCount="indefinite"/><animate attributeName="y" values="526;510;526" dur="2.10s" begin="-4.08s" repeatCount="indefinite"/></rect><rect x="890" y="499" width="12" height="33" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="11;33;11" dur="1.10s" begin="-4.25s" repeatCount="indefinite"/><animate attributeName="y" values="521;499;521" dur="1.10s" begin="-4.25s" repeatCount="indefinite"/></rect><rect x="916" y="508" width="12" height="24" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="8;24;8" dur="1.35s" begin="-4.42s" repeatCount="indefinite"/><animate attributeName="y" values="524;508;524" dur="1.35s" begin="-4.42s" repeatCount="indefinite"/></rect><rect x="942" y="497" width="12" height="35" rx="3" fill="#a78bfa" opacity="0.85"><animate attributeName="height" values="13;35;13" dur="1.60s" begin="-4.59s" repeatCount="indefinite"/><animate attributeName="y" values="519;497;519" dur="1.60s" begin="-4.59s" repeatCount="indefinite"/></rect>
+    <rect x="0.75" y="0.75" width="1198.5" height="558.5" rx="21.25" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+</svg>

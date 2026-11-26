@@ -51,13 +51,13 @@ When I have free time at night, I write dev notes at **[toanlb.dev](https://toan
 <br/>
 
 <div align="center">
-  <img src="./assets/craft-flow.svg" alt="What Goes In, What Comes Out - Games, Automotive HMI, and ToanLB" width="100%" />
+  <img src="./assets/craft-pipeline-v2.svg" alt="Symphony of a Builder - Games, Automotive HMI, and ToanLB Craft Pipeline" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/workbench-v2.svg" alt="What My Days Look Like - Unity, Car Screens, and Blog Checks" width="100%" />
+  <img src="./assets/workbench-ide-v2.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
 </div>
 
 ---
@@ -134,7 +134,7 @@ When I have free time at night, I write dev notes at **[toanlb.dev](https://toan
 <br/>
 
 <div align="center">
-  <img src="./assets/voxel-arcade.svg" alt="Voxel Sandbox Mini-Game Animation" width="100%" />
+  <img src="./assets/voxel-arcade-v2.svg" alt="Voxel Arcade WELCOME Message Animation" width="100%" />
 </div>
 
 <div align="center">
