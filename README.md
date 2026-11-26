@@ -57,7 +57,7 @@ When I have free time at night, I write dev notes at **[toanlb.dev](https://toan
 <br/>
 
 <div align="center">
-  <img src="./assets/workbench-ide-v3.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
+  <img src="./assets/workbench-ide-v4.svg" alt="Daily Engineering Workbench - Unity, Automotive HMI, and Verified Blog Lab" width="100%" />
 </div>
 
 ---
